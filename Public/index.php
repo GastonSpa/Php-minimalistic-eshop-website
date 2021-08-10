@@ -17,16 +17,20 @@ $router = new Core\Router();
 // definition : add($routeUrl, ['controller'=>'name', 'action'=>'value'])
 $router->add('', ['controller'=>'Home', 'action'=>'index']); // link from nav
 // $router->add('category', ['controller'=>'Category', 'action'=>'category']); // link from nav
-// $router->add('item', ['controller'=>'Item', 'action'=>'products']); // link from nav
 $router->add('catalog', ['controller'=>'Catalog', 'action'=>'catalog']); // link from nav
 $router->add('p', ['controller'=>'SingleProduct', 'action'=>'singleProduct']); // link from every product card
-$router->add('cart', ['controller'=>'Cart', 'action'=>'cart']); // link from nav
+$router->add('cart', ['controller'=>'Cart', 'action'=>'cart']); // link from nav & profile
 $router->add('order', ['controller'=>'Order', 'action'=>'order']); // link from Cart
+
 $router->add('login', ['controller'=>'Login', 'action'=>'login']); // link from nav
+$router->add('loging', ['controller'=>'Loging', 'action'=>'loging']); // link from login
+$router->add('disconnect', ['controller'=>'Disconnect', 'action'=>'disconnect']); // link from nav
 $router->add('profile', ['controller'=>'Profile', 'action'=>'profile']); // link from nav
 $router->add('signin', ['controller'=>'Signin', 'action'=>'signin']); // link from login
-$router->add('about', ['controller'=>'About', 'action'=>'about']); // link from nav
-$router->add('blog', ['controller'=>'Blog', 'action'=>'blog']); // link from about
+$router->add('signing', ['controller'=>'Loging', 'action'=>'signing']); // link from login
+
+$router->add('about', ['controller'=>'About', 'action'=>'about']); // link from nav & footer & about
+// $router->add('blog', ['controller'=>'Blog', 'action'=>'blog']); // link from footer & about
 $router->add('contact', ['controller'=>'Contact', 'action'=>'contact']); // link from footer & about
 
 // $router->add('{controller}/{action}');

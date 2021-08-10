@@ -103,7 +103,7 @@ class Router{
     }
 
     // Dispatch (envoie) the route, creating the controller object and running the action method
-    // $url is The route URL
+    // $url is the route URL
     // major method using most of other methods defined before in this file
     public function dispatch($url){
         $url = $this->removeQueryStringVariables($url);

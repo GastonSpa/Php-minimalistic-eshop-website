@@ -29,8 +29,16 @@
                 <input type="text" class="form-control form-control-lg" value="" id="username" />
             </div>
             <div class="form-group my-4">
+                <label for="email" class="h5">Email: *</label>
+                <input type="email" class="form-control form-control-lg" value="" id="email" />
+            </div>
+            <div class="form-group my-4">
                 <label for="password:" class="h5">Password: *</label>
                 <input type="password" class="form-control form-control-lg" value="" id="password" />
+            </div>
+            <div class="form-group my-4">
+                <label for="confirm_password:" class="h5">Confirm password: *</label>
+                <input type="password" class="form-control form-control-lg" value="" id="confirm_password" />
             </div>
             <!-- <label for="send" class="h5">&nbsp;</label> -->
             <button type="submit" class="btn btn-primary text-center my-4" id="signinFormSend">Signin</button>

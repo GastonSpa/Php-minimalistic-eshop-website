@@ -34,30 +34,30 @@
                     <h2 class="sidebar-title">Top products</h2>
                     <div class="thubmnail-recent">
                         <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                        <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                        <h2><a href="single-product.html">Sony Xperia - 2015</a></h2>
                         <div class="product-sidebar-price">
-                            <ins>$700.00</ins> <del>$100.00</del>
+                            <ins>$700.00</ins>
                         </div>                             
                     </div>
                     <div class="thubmnail-recent">
                         <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                        <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                        <h2><a href="single-product.html">Sony Xperia - 2015</a></h2>
                         <div class="product-sidebar-price">
-                            <ins>$700.00</ins> <del>$100.00</del>
+                            <ins>$700.00</ins>
                         </div>                             
                     </div>
                     <div class="thubmnail-recent">
                         <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                        <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                        <h2><a href="single-product.html">Sony Xperia - 2016</a></h2>
                         <div class="product-sidebar-price">
-                            <ins>$700.00</ins> <del>$100.00</del>
+                            <ins>$700.00</ins>
                         </div>                             
                     </div>
                     <div class="thubmnail-recent">
                         <img src="img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                        <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
+                        <h2><a href="single-product.html">Sony Xperia - 2017</a></h2>
                         <div class="product-sidebar-price">
-                            <ins>$700.00</ins> <del>$100.00</del>
+                            <ins>$700.00</ins>
                         </div>                             
                     </div>
                 </div>

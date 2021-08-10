@@ -11,13 +11,15 @@
         <!-- <div class="product"> -->
         <br>
         <a href="/catalog" class=""> < Go back to catalog</a>
-        <h1 class="section-title my-4">{{ product.name }} <small>by {{ product.brand }}</small></h1>
+        <h1 class="section-title my-4">{{ product.name }}</h1>
+        <!-- <span>by {{ product.brand }}</span> -->
+
         <div class="row">
             <div class="col-md-8">
                 <div class="product-carousel my-3 py-1">
                     <div class="row">
                         <div class="col-md-4">
-                            <img class="w-100" src="{{product.picture}}" alt="" title="">
+                            <img class="w-100" src="/img/{{product.picture}}" alt="" title="">
                         </div>
 
                         <div class="col-md-8">
@@ -30,7 +32,6 @@
                             </p>
                             <p class="product-wid-price h4">
                                 <ins>{{ product.price }} €</ins> 
-                                <del>$425.00</del>
                             </p>
                         </div>
                     </div>    

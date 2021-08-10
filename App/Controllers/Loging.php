@@ -3,76 +3,17 @@
 namespace App\Controllers;
 
 // use PDO;
-use \Core\View;
+// use \Core\View;
 use \App\Models\User;
-// use \App\Controllers\Profile;
+use \App\Controllers\Profile;
 
-class Login extends \Core\Controller {
+class Loging extends \Core\Controller {
 
-// test if connected.
-// if yes send certain values to renderTemplate, if no send other values
+    // public function __call(){
 
-
-    public function loginAction(){
-        View::renderTemplate('Login/index.php', 
-        [
-            'sendForm' => "loging"
-
-            // 'sendForm' => '$this->$log()'
-            // 'sendForm' => self::log()
-            // 'sendForm' => "login/log"
-            // 'sendForm' => "parent::log"
-            // 'passwordError' => $data['passwordError'],
-            // 'usernameError' => $data['usernameError']
-        ]
-        );
-    }
-
-    // link to form
-    // link to db
-
-    // search user
-    // public function logme(){
-    //     User::loginToDb2();
-    //     View::renderTemplate('Profile/index.php');
     // }
-
-    public function log2(){
-        // if (isset($_POST['hidden'])) {
-        //     $username = $_POST['username'];
-        //     $password = $_POST['password'];
-        //     $connection = Model::getDb();
-        //     $query = $connection->prepare("SELECT * FROM users WHERE username=:username"); // :username
-        //     $query->bindParam("username", $username, PDO::PARAM_STR);
-        //     $query->execute();
-        //     $result = $query->fetch(PDO::FETCH_ASSOC);
-        //     if (!$result) {
-        //         echo '<p class="error">Connection to database failed.</p>';
-        //     } else {
-        //         if (password_verify($password, $result['password'])) {
-        //             $_SESSION['user_id'] = $result['id'];
-        //             echo '<p class="success">Congratulations, you are logged in!</p>';
-        //         } else {
-        //             echo '<p class="error">Username password combination is wrong!</p>';
-        //         }
-        //     }
-        // }
-
-        // View::renderTemplate('Profile/index.php');
-    }
-
-    // Get the PDO database connection
-    // protected static function getDb(){
-
-    // return $db
-
-    // send to Profile page
-
-    // send to profile if connection succeed, stay on login otherwise ?
-    // call when sending the form (form action)
-
-
-    public function log() {
+    public function logingAction(){
+        
         $data = [
             'title' => 'Login page',
             'username' => '',
@@ -125,7 +66,9 @@ class Login extends \Core\Controller {
         }
         // always execute the following at the end of the function whatever happens
         // Profile->profileAction();
-        $this->loginAction();
+        // $this->loginAction();
+        $result = new Profile(['/profile']);
+        $result->profileAction();
         // $this->loginAction();
         // $this->view('users/login', $data);
     }
@@ -136,8 +79,8 @@ class Login extends \Core\Controller {
         $_SESSION['username'] = $user['username'];
         $_SESSION['email'] = $user['email'];
         $_SESSION['created_at'] = $user['created_at'];
-        $_SESSION['location'] = $user['location'];
-        $_SESSION['portrait'] = $user['portrait'];
+        // $_SESSION['location'] = $user['location'];
+        // $_SESSION['portrait'] = $user['portrait'];
         // header('location:' . URLROOT . '/pages/index');
     }
 

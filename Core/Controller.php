@@ -3,9 +3,11 @@
 namespace Core;
 
 // use cookie to populate $_SESSION[]
-session_start();
+// session_start();
 
 abstract class Controller{
+
+    // session_start();
 
     protected $route_params = [];
 

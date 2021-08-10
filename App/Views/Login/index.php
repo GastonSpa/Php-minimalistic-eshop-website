@@ -22,7 +22,7 @@
             <section class="col-md-6 login">
                 <p>Welcome, please enter the  following to log in.</p>
                 <!-- <p>If you have previously Login with us, <span>click here</span></p> -->
-                <form id="loginForm" method="POST" class="py-3 my-3" action="<?php $this->logme(); ?>">
+                <form id="loginForm" method="POST" class="py-3 my-3" action="{{sendForm}}">
                 <!-- return -->
                     <input id="hidden" name="hidden" type="hidden" value="hidden" /> <!-- input test pour le form backend-->
                     <div class="form-group my-4">
@@ -37,6 +37,12 @@
                     <button type="submit" class="btn btn-primary text-center my-4" id="loginFormSend" name="loginFormSend">Login</button>
                     <!-- <a href="#">Forgot Password ?</a> -->
                 </form>
+                <!-- <p class="invalidFeedback">
+                    {{passwordError}}
+                </p>
+                <p class="invalidFeedback">
+                    {{usernameError}}
+                </p> -->
             </section> 
             <!-- send to Profile page -->
             <section class="col-md-6 register">

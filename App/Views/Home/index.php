@@ -100,8 +100,8 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card cardAncient my-4 border-0 shadow">
-                            <a class="overlay d-block" href="">
-                                <img class="align-self-center" src="{{p.picture}}" alt="" title="">
+                            <a class="overlay d-block" href="{{p.link}}">
+                                <img class="align-self-center" src="/img/{{p.picture}}" alt="" title="">
                             </a>
                             <div class="card-body text-center d-flex flex-column justify-content-around ">
                                 <h4 class="card-title">{{p.name}}</h4>
@@ -113,7 +113,7 @@
                                 </p>
                                 <p class="card-text product-wid-price">
                                     <span class="text-left float-left align-left h5"> {{p.price}} € </span>
-                                    <small class="text-right float-right align-right text-muted"><a class="card-link" href="">See more</a></small >
+                                    <small class="text-right float-right align-right text-muted"><a class="card-link" href="{{p.link}}">See more</a></small >
                                 </p>
                             </div>
                         </div>
@@ -134,8 +134,8 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card cardAncient my-4 border-0 shadow">
-                            <a class="overlay d-block" href="">
-                                <img class="align-self-center" src="{{p.picture}}" alt="" title="">
+                            <a class="overlay d-block" href="{{p.link}}">
+                                <img class="align-self-center" src="/img/{{p.picture}}" alt="" title="">
                             </a>
                             <div class="card-body text-center d-flex flex-column justify-content-around ">
                                 <h4 class="card-title">{{p.name}}</h4>
@@ -147,7 +147,7 @@
                                 </p>
                                 <p class="card-text product-wid-price">
                                     <span class="text-left float-left align-left h5"> {{p.price}} € </span>
-                                    <small class="text-right float-right align-right text-muted"><a class="card-link" href="">See more</a></small >
+                                    <small class="text-right float-right align-right text-muted"><a class="card-link" href="{{p.link}}">See more</a></small >
                                 </p>
                             </div>
                         </div>
@@ -193,10 +193,10 @@
 {% for p in topsellers %}
 
                     <div class="single-wid-product">
-                        <a href="single_product">
-                            <img src="{{p.picture}}" alt="" class="product-thumb">
+                        <a href="{{p.link}}">
+                            <img src="/img/{{p.picture}}" alt="" class="product-thumb">
                         </a>
-                        <h2><a href="single_product">{{p.name}}</a></h2>
+                        <h2>{{p.name}}</h2>
                         <div class="product-wid-rating">
                             <!-- <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -205,7 +205,8 @@
                             <i class="fa fa-star"></i> -->
                         </div>
                         <div class="product-wid-price">
-                            <ins>{{p.price}}</ins>
+                            <ins>{{p.price}} €</ins>
+                            <small class="text-right float-right align-right text-muted"><a class="card-link" href="{{p.link}}">See more</a></small >
                         </div>
                     </div>
 
@@ -222,10 +223,10 @@
 {% for p in latest %}
 
                     <div class="single-wid-product">
-                        <a href="single_product">
-                            <img src="{{p.picture}}" alt="" class="product-thumb">
+                    <a href="{{p.link}}">
+                            <img src="/img/{{p.picture}}" alt="" class="product-thumb">
                         </a>
-                        <h2><a href="single_product">{{p.name}}</a></h2>
+                        <h2>{{p.name}}</h2>
                         <div class="product-wid-rating">
                             <!-- <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -235,6 +236,7 @@
                         </div>
                         <div class="product-wid-price">
                             <ins>{{p.price}} €</ins>
+                            <small class="text-right float-right align-right text-muted"><a class="card-link" href="{{p.link}}">See more</a></small >
                         </div>
                     </div>
 
@@ -251,10 +253,11 @@
 {% for p in scarfs %}
 
                         <div class="single-wid-product">
-                            <a href="single_product">
-                                <img src="{{p.picture}}" alt="" class="product-thumb">
+                            <!-- class="overlay d-block" -->
+                            <a href="{{p.link}}">
+                                <img src="/img/{{p.picture}}" alt="" class="product-thumb">
                             </a>
-                            <h2><a href="single_product">{{p.name}}</a></h2>
+                            <h2>{{p.name}}</h2>
                             <div class="product-wid-rating">
                                 <!-- <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -263,7 +266,8 @@
                                 <i class="fa fa-star"></i> -->
                             </div>
                             <div class="product-wid-price">
-                                <ins>{{p.price}}</ins>
+                                <ins>{{p.price}} €</ins>
+                                <small class="text-right float-right align-right text-muted"><a class="card-link" href="{{p.link}}">See more</a></small >
                             </div>
                         </div>
 

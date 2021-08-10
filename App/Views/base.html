@@ -62,15 +62,6 @@
                 <a href="/category" class="nav-link navigation-link">Category</a>
               </li> -->
               <!-- <li class="mx-3 mx-md-2 nav-item">
-                  <a href="single-product">Product</a>
-              </li> -->
-              <!-- <li class="mx-3 mx-md-2 nav-item">
-                <a href="/cart" class="nav-link navigation-link">Cart</a>
-              </li> -->
-              <!-- <li class="mx-3 mx-md-2 nav-item">
-                <a href="/checkout" class="nav-link navigation-link">Checkout</a>
-              </li> -->
-              <!-- <li class="mx-3 mx-md-2 nav-item">
                 <a href="/blog" class="nav-link navigation-link">Blog</a>
               </li> -->
               <li class="mx-3 mx-md-2 nav-item">
@@ -80,14 +71,20 @@
                 <a href="/contact" class="nav-link navigation-link">Contact</a>
               </li> -->
               <li class="mx-3 mx-md-2 nav-item">
+                <a href="/cart" class="nav-link navigation-link">Cart</a>
+              </li>
+{% if logged %}
+              <li class="mx-3 mx-md-2 nav-item">
+                <a href="/profile" class="nav-link navigation-link">Profile</a>
+              </li>
+              <li class="mx-3 mx-md-2 nav-item">
+                <a href="/disconnect" class="nav-link navigation-link">Profile</a>
+              </li>
+{% else %}
+              <li class="mx-3 mx-md-2 nav-item">
                 <a href="/login" class="nav-link navigation-link">Login</a>
               </li>
-              <!-- <li class="mx-3 mx-md-2 nav-item">
-                <a href="/profile" class="nav-link navigation-link">Profile</a>
-              </li> -->
-              <!-- <li class="mx-3 mx-md-2 nav-item">
-                <a href="/signin" class="nav-link navigation-link">Signin</a>
-              </li> -->
+{% endif %}
           </div>
       
         </nav>

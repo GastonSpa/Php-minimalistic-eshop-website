@@ -1,4 +1,4 @@
-{% extends "base.php" %}
+{% extends "base.html" %}
 
 {% block title %} 
     Profile
@@ -16,8 +16,14 @@
     </div>
 
     <div class="container">
-        {{title}}
-        {{content}}
+
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+        <p><a href="/login">{{link}}</a></p>
+
+        <!-- <br> {{user_session.name}}
+        <br> {{user_session.id}}
+        <br> {{user_session.email}} -->
     </div>
 </div>
 

@@ -32,7 +32,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card cardAncient my-4 border-0 shadow">
                             <a class="overlay d-block" href="{{p.link}}">
-                                <img class="align-self-center" src="{{p.picture}}" alt="" title="">
+                                <img class="align-self-center" src="/img/{{p.picture}}" alt="" title="">
                             </a>
                             <div class="card-body text-center d-flex flex-column justify-content-around ">
                                 <h4 class="card-title">{{p.name}}</h4>
@@ -69,7 +69,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card cardAncient my-4 border-0 shadow">
                             <a class="overlay d-block" href="{{p.link}}">
-                                <img class="align-self-center" src="{{p.picture}}" alt="" title="">
+                                <img class="align-self-center" src="/img/{{p.picture}}" alt="" title="">
                             </a>
                             <div class="card-body text-center d-flex flex-column justify-content-around ">
                                 <h4 class="card-title">{{p.name}}</h4>
@@ -106,7 +106,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card cardAncient my-4 border-0 shadow">
                             <a class="overlay d-block" href="{{p.link}}">
-                                <img class="align-self-center" src="{{p.picture}}" alt="" title="">
+                                <img class="align-self-center" src="/img/{{p.picture}}" alt="" title="">
                             </a>
                             <div class="card-body text-center d-flex flex-column justify-content-around ">
                                 <h4 class="card-title">{{p.name}}</h4>
@@ -143,7 +143,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card cardAncient my-4 border-0 shadow">
                             <a class="overlay d-block" href="{{p.link}}">
-                                <img class="align-self-center" src="{{p.picture}}" alt="" title="">
+                                <img class="align-self-center" src="/img/{{p.picture}}" alt="" title="">
                             </a>
                             <div class="card-body text-center d-flex flex-column justify-content-around ">
                                 <h4 class="card-title">{{p.name}}</h4>

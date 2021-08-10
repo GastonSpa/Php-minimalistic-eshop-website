@@ -66,10 +66,9 @@ class Product extends \Core\Model {
 
         $db = static::getDB();
         $stmt = $db->query($sqlQuery);
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        return $result;
-    }
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);;
+    }// return indexed array of keyed array ie each entry as an keyed array in a big indexed array of entries
+    // so to access : $result[i][column_name]
 
 
 
@@ -84,7 +83,6 @@ class Product extends \Core\Model {
         // ));
 
         $stmt->bindParam(':product_id', $product_id);
-        ;
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
@@ -96,8 +94,6 @@ class Product extends \Core\Model {
     }
 
     //useless
-
-
 
     public static function addlink($pdo_array){
         
