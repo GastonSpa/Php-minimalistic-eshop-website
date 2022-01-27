@@ -1,5 +1,5 @@
 ## Description
-Simple and minimalist Php framework for an e-shop.
+Simple Php project for an e-shop website.
 I made it as a training excecise.
 
 ## Credits
